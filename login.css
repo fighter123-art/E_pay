@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0d47a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    color: #0D47a1;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h1 span {
+    color: #06c;
+}
+
+.input {
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+button.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0D47a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.login-btn:hover {
+    background-color: orange;
+}
+
+.Forgot-password {
+    margin-top: 10px;
+}
+
+.Forgot-password a {
+    color: #0D47a1;
+    text-decoration: none;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: orange;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .login-box {
+        width: 350px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 300px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button.login-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 250px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        padding: 6px;
+    }
+
+    button.login-btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
